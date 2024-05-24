@@ -2210,36 +2210,13 @@ input, select, textarea {
 			width: 100%;
 		}
 
-		/* New class for video.html images */
-		.video-image {
-			display: block;
-			justify-content: center; Horizontally center */
-			align-items: center; /* Vertically center */
-			height: 100%; Ensure the image takes full height */
-		}
-
 		@media screen and (max-width: 736px) {
 
 			.image.main {
 				margin: 1.5em 0;
 			}
 
-			}
-
-			.video-section {
-				display: flex;
-				align-items: center;
-			}
-			
-			.video-image {
-				flex: 0 0 auto; /* Let the image grow and shrink as needed */
-				margin-right: 20px; /* Adjust the spacing between the image and content */
-			}
-			
-			.video-content {
-				flex: 1 1 auto; /* Let the content fill the remaining space */
-			}
-			
+		}			
 
 /* List */
 
