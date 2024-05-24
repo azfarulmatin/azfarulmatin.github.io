@@ -2206,17 +2206,40 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
-				width: 100%;
+		.image.main img {
+			width: 100%;
+		}
+
+		/* New class for video.html images */
+		.video-image {
+			display: block;
+			justify-content: center; Horizontally center */
+			align-items: center; /* Vertically center */
+			height: 100%; Ensure the image takes full height */
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.image.main {
+				margin: 1.5em 0;
 			}
 
-			@media screen and (max-width: 736px) {
-
-				.image.main {
-					margin: 1.5em 0;
-				}
-
 			}
+
+			.video-section {
+				display: flex;
+				align-items: center;
+			}
+			
+			.video-image {
+				flex: 0 0 auto; /* Let the image grow and shrink as needed */
+				margin-right: 20px; /* Adjust the spacing between the image and content */
+			}
+			
+			.video-content {
+				flex: 1 1 auto; /* Let the content fill the remaining space */
+			}
+			
 
 /* List */
 
@@ -2900,6 +2923,31 @@ input, select, textarea {
 				}
 
 		}
+		/* Specific styles for full-width tile */
+	.tiles article.full-width {
+		width: 100% !important; /* Ensure it spans the full width */
+		padding: 4em 2em 2em 2em; /* Adjust padding as needed */
+		height: auto; /* Adjust height if needed */
+	}
+
+	/* Adjustments for responsiveness */
+	@media screen and (max-width: 1280px) {
+		.tiles article.full-width {
+			padding: 3em 1.5em 1em 1.5em; /* Adjust padding for medium-sized screens */
+		}
+	}
+
+	@media screen and (max-width: 736px) {
+		.tiles article.full-width {
+			padding: 3em 1em 1em 1em; /* Adjust padding for small screens */
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.tiles article.full-width {
+			padding: 2em 0.5em 0.5em 0.5em; /* Adjust padding for very small screens */
+		}
+	}
 
 /* Contact Method */
 
