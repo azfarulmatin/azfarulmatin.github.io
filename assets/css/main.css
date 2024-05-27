@@ -4033,7 +4033,7 @@ input, select, textarea {
     width: 100%;
     padding-top: 70.25%; /* 16:9 Aspect Ratio for general screens */
     overflow: hidden;
-    margin-bottom: 2em; /* Add space between sections */
+    /* margin-bottom: 2em; Add space between sections */
     max-height: 500px; /* Max height to prevent excessive height on larger screens */
 }
 
