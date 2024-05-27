@@ -3999,3 +3999,68 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+		/* .video-container {
+			position: relative;
+			width: 100%;
+			max-width: 100%;
+			height: 0;
+			padding-bottom: 36.25%; 
+			overflow: hidden;
+		}
+		
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+
+		@media screen and (max-width: 736px) {
+			.video-container {
+				padding-bottom: 56.25%;
+			}
+		} */
+
+		/* Video */
+
+/* Video */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 70.25%; /* 16:9 Aspect Ratio for general screens */
+    overflow: hidden;
+    margin-bottom: 2em; /* Add space between sections */
+    max-height: 500px; /* Max height to prevent excessive height on larger screens */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .video-container {
+        padding-top: 75%; /* Adjusted Aspect Ratio for tablets */
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .video-container {
+        padding-top: 21.25%; /* Adjusted Aspect Ratio for larger screens */
+    }
+}
+
+
+		
+
+
+
+
